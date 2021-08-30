@@ -10,7 +10,11 @@
             }, timeout);
         });
     }
+
+    async function runAsynchronous(){
     }
+    }
+
     function runPromise() {
     }
 })();
