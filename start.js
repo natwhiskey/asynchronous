@@ -31,4 +31,7 @@
              console.log(error);
         });
     }
+    runAsynchronous();
+    // runPromise();
+
 })();
