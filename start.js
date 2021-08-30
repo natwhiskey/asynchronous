@@ -19,7 +19,7 @@
             
         } catch (error) {
           console.log(error);  
-    }
+        }
     }
 
     function runPromise() {
