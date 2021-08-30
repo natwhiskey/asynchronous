@@ -12,6 +12,13 @@
     }
 
     async function runAsynchronous(){
+        try {
+            await simulateAsyncAPI('A', 1000);
+            await simulateAsyncAPI('B', 500);
+            await simulateAsyncAPI('C', 100);
+            
+        } catch (error) {
+          console.log(error);  
     }
     }
 
