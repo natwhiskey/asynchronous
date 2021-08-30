@@ -23,5 +23,12 @@
     }
 
     function runPromise() {
+        simulateAsyncAPI('A', 1000).then(() => {
+            return simulateAsyncAPI('B', 500);
+        }).then(() => {
+            return simulateAsyncAPI('C', 100);
+        }).catch((error) => {
+             console.log(error);
+        });
     }
 })();
